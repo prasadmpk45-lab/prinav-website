@@ -1,0 +1,188 @@
+/* PAGE */
+.cyber-page {
+  font-family: "Segoe UI", sans-serif;
+}
+
+
+/* HERO */
+.cyber-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 8%;
+  margin-top: 80px;
+  background: linear-gradient(135deg, #0f1c2e, #1b2f4b);
+  color: white;
+  min-height: 70vh;
+  gap: 50px;
+}
+
+.cyber-hero-left {
+  flex: 1;
+}
+
+.cyber-badge {
+  background: rgba(255,255,255,0.1);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.cyber-hero-left h1 {
+  font-size: 42px;
+  margin-top: 20px;
+}
+
+.cyber-hero-left p {
+  margin-top: 20px;
+  color: #cbd5e1;
+}
+
+.cyber-hero-right img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+}
+
+
+/* OVERVIEW */
+.cyber-overview {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.cyber-overview h2 {
+  color: #1c7f84;
+  margin-bottom: 30px;
+}
+
+
+/* CONTAINER */
+.cyber-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+
+/* CARD */
+.cyber-card {
+  flex: 1;
+  background: #f8f9fb;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+
+/* LIST */
+.cyber-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cyber-card li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  background: #f1f3f7;
+  border-left: 4px solid #1c7f84;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* ICON */
+.cyber-card li svg {
+  color: #1c7f84;
+  font-size: 16px;
+}
+
+/* 🔥 HOVER */
+.cyber-card li:hover {
+  background: #e6ecf5;
+  border-left: 4px solid #3b82f6;
+  transform: translateX(6px);
+}
+
+.cyber-card li:hover svg {
+  color: #3b82f6;
+}
+
+
+/* TECH SECTION */
+.cyber-tech {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.cyber-badge-light {
+  background: #e6ecf5;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.cyber-tech h2 {
+  margin: 15px 0;
+  color: #1c7f84;
+  font-weight: 600;
+}
+
+.cyber-tech p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+
+/* GRID */
+.cyber-tech-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+
+/* CARD */
+.cyber-tech-card {
+  background: #f1f3f7;
+  padding: 18px;
+  border-radius: 12px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* 🔥 HOVER */
+.cyber-tech-card:hover {
+  background: #2563eb;
+  color: #fff;
+  transform: translateY(-6px) scale(1.03);
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .cyber-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cyber-container {
+    flex-direction: column;
+  }
+
+  .cyber-tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .cyber-tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cyber-hero-left h1 {
+    font-size: 28px;
+  }
+}

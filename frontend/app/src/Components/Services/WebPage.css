@@ -1,0 +1,191 @@
+.web-page {
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* 🔥 HERO */
+.web-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 80px 8%;
+  margin-top: 80px;
+
+  background: linear-gradient(135deg, #0f1c2e, #1b2f4b);
+  color: white;
+
+  min-height: 70vh;
+  gap: 50px;
+}
+
+/* LEFT */
+.web-hero-left {
+  flex: 0.8; /* ⬅️ reduced so image gets more space */
+  max-width: 550px;
+}
+
+.web-badge {
+  background: rgba(255,255,255,0.1);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.web-hero-left h1 {
+  font-size: 48px;
+  margin-top: 20px;
+}
+
+.web-hero-left p {
+  margin-top: 20px;
+  color: #cbd5e1;
+}
+
+/* RIGHT (🔥 BIGGER IMAGE) */
+.web-hero-right {
+  flex: 1.2; /* ⬅️ more space for image */
+  display: flex;
+  justify-content: center;
+}
+
+.web-hero-right img {
+  width: 100%;
+  max-width: 650px; /* ⬅️ increased size */
+  height: auto;
+  border-radius: 20px;
+}
+
+/* 🔥 INTRO */
+.web-intro {
+  text-align: center;
+  padding: 60px 8%;
+  max-width: 1100px;
+  margin: auto;
+  color: #555;
+}
+
+/* 🔥 MAIN */
+.web-container {
+  display: flex;
+  gap: 40px;
+  padding: 60px 8%;
+  flex-wrap: wrap;
+}
+
+.web-card {
+  flex: 1;
+  background: #f8f9fb;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.web-card h2 {
+  margin-bottom: 20px;
+}
+
+/* ITEM */
+.web-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 14px;
+  margin-bottom: 12px;
+
+  background: #eef1f6;
+  border-radius: 10px;
+  border-left: 4px solid #1C7F84;
+
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* ICON */
+.web-icon {
+  width: 40px;
+  height: 40px;
+  background: #dff1f2;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #1C7F84;
+}
+
+/* HOVER */
+.web-item:hover {
+  background: #e6ecf5;
+  border-left: 4px solid #3b82f6;
+  transform: translateX(5px);
+}
+
+.web-item:hover .web-icon {
+  background: #dbeafe;
+  color: #3b82f6;
+}
+
+/* 🔥 TECH */
+.web-tech {
+  text-align: center;
+  padding: 60px 8%;
+}
+
+.web-tech h2 {
+  color: #1C7F84;
+}
+
+.web-tech p {
+  margin: 10px 0 30px;
+  color: #666;
+}
+
+.web-tech-grid {
+    text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.web-tech-card {
+  padding: 20px;
+  background: #f1f3f7;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.web-tech-card:hover {
+  background: #0d5be1;
+  color: white;
+  transform: translateY(-5px);
+}
+
+/* 🔥 RESPONSIVE */
+@media (max-width: 900px) {
+    .web-tech-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+  .web-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .web-hero-left {
+    flex: 1;
+  }
+
+  .web-hero-left h1 {
+    font-size: 36px;
+  }
+
+  .web-hero-right img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .web-tech-grid {
+    grid-template-columns: 1fr; /* mobile */
+  }
+}

@@ -1,0 +1,185 @@
+.microsoft-page {
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* 🔥 HERO */
+.microsoft-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 8%;
+  margin-top: 80px;
+  background: linear-gradient(135deg, #0f1c2e, #1b2f4b);
+  color: white;
+  min-height: 70vh;
+  gap: 50px;
+}
+
+/* LEFT */
+.microsoft-hero-left {
+  flex: 1;
+  max-width: 600px;
+}
+
+.microsoft-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.1);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.microsoft-hero-left h1 {
+  font-size: 42px;
+  line-height: 1.3;
+}
+
+.microsoft-hero-left p {
+  margin-top: 20px;
+  color: #cbd5e1;
+}
+
+/* RIGHT */
+.microsoft-hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.microsoft-hero-right img {
+  width: 100%;
+  max-width: 550px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+/* OVERVIEW */
+.microsoft-overview {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.microsoft-overview h2 {
+  color: #1c7f84;
+  margin-bottom: 30px;
+}
+
+/* CONTAINER */
+.microsoft-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.microsoft-card {
+  flex: 1;
+  background: #f8f9fb;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+/* LIST */
+.microsoft-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* ITEM */
+.microsoft-card li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  background: #f1f3f7;
+  border-left: 4px solid #1c7f84;
+  transition: 0.3s;
+}
+
+/* ICON */
+.microsoft-card li svg {
+  color: #1c7f84;
+}
+
+/* 🔥 HOVER */
+.microsoft-card li:hover {
+  background: #e6ecf5;
+  border-left: 4px solid #3b82f6;
+  transform: translateX(5px);
+}
+
+.microsoft-card li:hover svg {
+  color: #3b82f6;
+}
+
+/* TECH */
+.microsoft-tech {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.microsoft-badge-light {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #e6ecf5;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.microsoft-tech h2 {
+  margin: 10px 0;
+}
+
+.microsoft-tech p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* GRID */
+.microsoft-tech-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.microsoft-tech-card {
+  background: #f1f3f7;
+  padding: 18px;
+  border-radius: 12px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* 🔥 BLUE HOVER */
+.microsoft-tech-card:hover {
+  background: #2563eb;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .microsoft-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .microsoft-container {
+    flex-direction: column;
+  }
+
+  .microsoft-tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .microsoft-tech-grid {
+    grid-template-columns: 1fr;
+  }
+}

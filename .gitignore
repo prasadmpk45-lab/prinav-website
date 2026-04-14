@@ -361,3 +361,21 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Frontend (Vite/React)
+dist/
+dist-ssr/
+.vite/
+coverage/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+
+# Common editors
+.vscode/
+.idea/
+
+# Runtime uploads
+**/wwwroot/resumes/*
+!**/wwwroot/resumes/.gitkeep

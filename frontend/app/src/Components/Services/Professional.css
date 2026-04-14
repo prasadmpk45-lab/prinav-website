@@ -1,0 +1,195 @@
+.professional-page {
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* HERO */
+.professional-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 8%;
+  margin-top: 80px;
+  background: linear-gradient(135deg, #0f1c2e, #1b2f4b);
+  color: white;
+  min-height: 70vh;
+  gap: 50px;
+}
+
+/* LEFT */
+.professional-hero-left {
+  flex: 1;
+  max-width: 600px;
+}
+
+.professional-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.1);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.professional-hero-left h1 {
+  font-size: 42px;
+}
+
+.professional-hero-left p {
+  margin-top: 20px;
+  color: #cbd5e1;
+}
+
+/* RIGHT */
+.professional-hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.professional-hero-right img {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 20px;
+}
+
+/* OVERVIEW */
+.professional-overview {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.professional-overview h2 {
+  color: #1c7f84;
+  margin-bottom: 30px;
+}
+
+/* CONTAINER */
+.professional-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.professional-card {
+  flex: 1;
+  background: #f8f9fb;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+/* LIST */
+.professional-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.professional-card li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  background: #f1f3f7;
+  border-left: 4px solid #1c7f84;
+  transition: 0.3s;
+}
+
+/* ICON */
+.professional-card li svg {
+  color: #1c7f84;
+}
+
+/* 🔥 HOVER LIGHT BLUE */
+.professional-card li:hover {
+  background: #e6ecf5;
+  border-left: 4px solid #3b82f6;
+  transform: translateX(5px);
+}
+
+.professional-card li:hover svg {
+  color: #3b82f6;
+}
+
+/* TECH */
+.professional-tech {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.professional-badge-light {
+  background: #e6ecf5;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.professional-tech h2 {
+  color: #1b7b7f;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  position: relative;
+  display: inline-block;
+}
+
+/* underline accent */
+.professional-tech h2::after {
+  content: "";
+  width: 60%;
+  height: 3px;
+  background: #1b7b7f;
+  display: block;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+.professional-tech p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* GRID */
+.professional-tech-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.professional-tech-card {
+  background: #f1f3f7;
+  padding: 18px;
+  border-radius: 12px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* 🔥 BLUE HOVER */
+.professional-tech-card:hover {
+  background: #2563eb;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .professional-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .professional-container {
+    flex-direction: column;
+  }
+
+  .professional-tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .professional-tech-grid {
+    grid-template-columns: 1fr;
+  }
+}

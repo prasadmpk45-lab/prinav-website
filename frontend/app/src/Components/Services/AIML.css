@@ -1,0 +1,198 @@
+/* PAGE */
+.ai-ml-page {
+  font-family: "Segoe UI", sans-serif;
+}
+
+
+/* HERO */
+.ai-ml-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 8%;
+  margin-top: 80px;
+  background: linear-gradient(135deg, #0f1c2e, #1b2f4b);
+  color: white;
+  gap: 50px;
+  min-height: 70vh;
+}
+
+.ai-ml-hero-left {
+  flex: 1;
+}
+
+.ai-ml-badge {
+  background: rgba(255,255,255,0.1);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.ai-ml-hero-left h1 {
+  font-size: 48px;
+  margin-top: 20px;
+}
+
+.ai-ml-hero-left p {
+  margin-top: 20px;
+  color: #cbd5e1;
+  max-width: 520px;
+}
+
+.ai-ml-hero-right img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 20px;
+}
+
+
+/* OVERVIEW */
+.ai-ml-overview {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.ai-ml-overview h2 {
+  color: #1c7f84;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+
+/* CONTAINER */
+.ai-ml-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+
+/* CARD */
+.ai-ml-card {
+  flex: 1;
+  background: #f8f9fb;
+  padding: 30px;
+  border-radius: 14px;
+  text-align: left;
+}
+
+
+/* LIST */
+.ai-ml-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ai-ml-card li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  background: #f1f3f7;
+  border-left: 4px solid #1c7f84;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+/* ICON */
+.ai-ml-card li svg {
+  color: #1c7f84;
+  background: #e6f4f5;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 30px;
+}
+
+/* 🔥 HOVER */
+.ai-ml-card li:hover {
+  background: #e6ecf5;
+  border-left: 4px solid #3b82f6;
+  transform: translateX(6px);
+}
+
+.ai-ml-card li:hover svg {
+  color: #3b82f6;
+  background: #dbeafe;
+}
+
+
+/* TECH */
+.ai-ml-tech {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.ai-ml-badge-light {
+  background: #e6ecf5;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.ai-ml-tech h2 {
+  margin: 15px 0;
+  color: #1c7f84;
+  font-size: 28px;
+}
+
+.ai-ml-tech p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+
+/* GRID */
+.ai-ml-tech-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+
+/* CARD */
+.ai-ml-tech-card {
+  background: #f1f3f7;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* 🔥 BLUE HOVER */
+.ai-ml-tech-card:hover {
+  background: #2563eb;
+  color: white;
+  transform: translateY(-6px) scale(1.03);
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+
+  .ai-ml-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ai-ml-container {
+    flex-direction: column;
+  }
+
+  .ai-ml-tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+
+  .ai-ml-tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-ml-hero-left h1 {
+    font-size: 28px;
+  }
+}

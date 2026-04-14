@@ -1,0 +1,231 @@
+/* PAGE */
+.ds-page {
+  font-family: "Segoe UI", sans-serif;
+}
+
+
+/* HERO */
+.ds-hero {
+    height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 8%;
+  background: linear-gradient(135deg, #0f1c2e, #1b2f4b);
+  color: white;
+}
+
+.ds-hero-left {
+  max-width: 550px;
+}
+
+.ds-badge {
+  background: rgba(255,255,255,0.1);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.ds-hero h1 {
+  font-size: 42px;
+  margin-top: 15px;
+}
+
+.ds-hero p {
+  margin-top: 15px;
+  color: #cbd5e1;
+}
+
+.ds-hero-right img {
+  width: 420px;
+}
+
+
+/* OVERVIEW */
+.ds-overview {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.ds-overview h2 {
+  color: #1c7f84;
+  margin-bottom: 40px;
+}
+
+
+/* CONTAINER */
+.ds-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+
+/* CARD */
+.ds-card {
+  flex: 1;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: left;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  border: 1px solid #eef2f6;
+}
+
+.ds-card h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+/* LIST */
+.ds-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+/* LIST ITEM */
+.ds-card li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 10px 12px;
+  margin-bottom: 10px;
+
+  background: #f8fafc;
+  border-radius: 14px;
+
+  position: relative;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+
+/* LEFT LINE */
+.ds-card li::before {
+  width: 3px;
+  height: 75%;
+}
+
+
+/* ICON BOX */
+.ds-card li svg {
+  font-size: 14px;
+
+  background: #e6f4f5;
+  color: #1c7f84;
+
+  padding: 8px;
+  border-radius: 10px;
+
+  min-width: 30px;
+  min-height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.3s;
+}
+
+
+/* 🔥 HOVER */
+.ds-card li:hover {
+  background: #e6f0ff;
+  transform: translateX(6px);
+}
+
+.ds-card li:hover::before {
+  background: #2563eb;
+}
+
+.ds-card li:hover svg {
+  background: #2563eb;
+  color: white;
+  transform: scale(1.05);
+}
+
+
+/* TECH SECTION */
+.ds-tech {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.ds-badge-light {
+  background: #e6ecf5;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.ds-tech h2 {
+  margin: 15px 0;
+  color: #1c7f84;
+}
+
+.ds-tech p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+
+/* GRID */
+.ds-tech-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+
+/* TECH CARD */
+.ds-tech-card {
+  background: #eef2f6;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
+/* 🔥 BLUE HOVER */
+.ds-tech-card:hover {
+  background: #2563eb;
+  color: white;
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .ds-container {
+    flex-direction: column;
+  }
+
+  .ds-tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .ds-tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ds-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ds-hero-right img {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
